@@ -29,3 +29,8 @@ class AI(commands.Cog):
         answer=response.choice[0].text.strip()
         ctx.send(answer)
 
+
+
+def setup(client):
+    """Set up all the cogs."""
+    client.add_cog(AI(client))
