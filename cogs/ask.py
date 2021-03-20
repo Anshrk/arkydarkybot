@@ -21,7 +21,7 @@ class AI(commands.Cog):
             chat_log = start_chat_log
         
         prompt = f'{chat_log} Human: {question}\nAI:'
-        response = completition.create(
+        response = completion.create(
             prompt=prompt, engine="davince", stop=['\nHuman'], temperature=0.9,
             top_p=1, frequency_penalty=0, presence_penalty=0.6, best_of=1,
             max_tokens=150
