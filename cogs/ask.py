@@ -15,6 +15,7 @@ class AI(commands.Cog):
     def __init__(self, client):
         self.client = client
     
+    @commands.Command
     def ask(self, ctx, question, chat_log=None):
         """ASK IT SHIT"""
         if chat_log == None:
