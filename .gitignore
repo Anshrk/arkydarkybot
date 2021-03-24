@@ -1,5 +1,8 @@
 env/
 
 
+.vim/
 .env
 *.pyc
+
+*/__pycache__/
